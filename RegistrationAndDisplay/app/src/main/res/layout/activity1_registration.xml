@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registerbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Page"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Here"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="300dp"
+            android:background="#D6ECEF"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#706868"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Select date of birth"
+                android:inputType="date"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#706868"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#706868"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
